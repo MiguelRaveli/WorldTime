@@ -1,30 +1,33 @@
-# React + TypeScript + Vite
+# WorldTime
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao **WorldTime**! Este é um projeto simples, mas incrivelmente útil, que utiliza a API WorldTime para fornecer informações de data e hora de diferentes regiões do mundo. Com uma interface limpa e amigável, o WorldTime permite que você escolha uma região e obtenha rapidamente dados como data, hora, dia da semana, dia do ano e número da semana.
 
-Currently, two official plugins are available:
+## Funcionalidades Principais
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Seleção de Região:** Escolha uma região do mundo para visualizar informações de data e hora.
 
-## Expanding the ESLint configuration
+- **Exibição Detalhada:** Obtenha detalhes como data, hora, dia da semana, dia do ano e número da semana.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Interface Intuitiva:** A interface foi projetada para ser fácil de usar e proporcionar uma experiência sem complicações.
 
-- Configure the top-level `parserOptions` property like this:
+## Tecnologias Utilizadas
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Este projeto foi desenvolvido utilizando:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- [React](https://reactjs.org/): Uma biblioteca JavaScript para construção de interfaces de usuário.
+- [Vite](https://vitejs.dev/): Um construtor de projetos rápido que suporta o desenvolvimento de aplicativos modernos.
+- [TypeScript](https://www.typescriptlang.org/): Uma linguagem de programação que adiciona tipagem estática ao JavaScript.
+- CSS: Estilização simples para uma aparência limpa e agradável.
+
+## Como Usar
+
+1. Acesse o WorldTime em [https://miguelraveli.github.io/WorldTime/](https://miguelraveli.github.io/WorldTime/)
+
+2. Explore diferentes fusos horários e obtenha informações detalhadas.
+
+## Contato
+
+Para qualquer dúvida ou sugestão, entre em contato em [miguel.raveli.g@gmail.com].
+
+Explore os fusos horários do mundo com o WorldTime!
+
