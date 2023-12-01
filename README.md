@@ -27,6 +27,11 @@ Este projeto foi desenvolvido utilizando:
 
 ## Contato
 
+
+## Imagens
+
+![image](https://github.com/MiguelRaveli/WorldTime/assets/86502825/4068da16-314d-4eb1-8946-0d32a26623c5)
+
 Para qualquer dúvida ou sugestão, entre em contato em [miguel.raveli.g@gmail.com].
 
 Explore os fusos horários do mundo com o WorldTime!
