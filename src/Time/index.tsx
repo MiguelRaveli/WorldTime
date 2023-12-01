@@ -1,8 +1,7 @@
-import axios from "axios";
 import { useEffect, useState } from "react";
 import { TypetimeResult } from "../types/TypetimeResult";
 import Result from "../Result";
-import classes from "./index.module.css"
+import classes from "./index.module.css";
 type indexT = {
   title: string;
 };
@@ -15,8 +14,8 @@ const Time = ({ title }: indexT) => {
 
   const getTimeZone = async () => {
     try {
-      const res = await axios.get(`http://worldtimeapi.org/api/timezone/`);
-      const data = res.data;
+      const res = await fetch(`http://worldtimeapi.org/api/timezone/`);
+      const data = await res.json();
       setTimeZone(data);
     } catch (error) {
       console.log(error);
@@ -24,11 +23,9 @@ const Time = ({ title }: indexT) => {
   };
   const getLocation = async () => {
     try {
-      const res = await axios.get(
-        `http://worldtimeapi.org/api/timezone/${regiao}`
-      );
+      const res = await fetch(`http://worldtimeapi.org/api/timezone/${regiao}`);
 
-      const data = res.data;
+      const data = await res.json();
       setTimeResult(data);
       setIsSearch(true);
     } catch (error) {
@@ -44,8 +41,8 @@ const Time = ({ title }: indexT) => {
   }, []);
   return (
     <div className={classes.index}>
-      <div  className={classes.container}>
-        <div  className={classes.title}>
+      <div className={classes.container}>
+        <div className={classes.title}>
           <h1>{title}</h1>
         </div>
         <div className={classes.select}>
